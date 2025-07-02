@@ -149,6 +149,7 @@ const taskGroups = [
 
 .task-group {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .group-title {
@@ -177,6 +178,7 @@ const taskGroups = [
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
+  justify-content: flex-start;
 }
 
 .task-item:hover {
