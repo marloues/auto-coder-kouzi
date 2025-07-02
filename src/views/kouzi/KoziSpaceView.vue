@@ -28,9 +28,16 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
 .main-content {
   background-color: rgb(25,27,45);
   flex: 1;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  height: calc(100vh - 32px);
+  transition: all 0.3s ease;
+}
+
+.main-content:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
 }
 </style>
