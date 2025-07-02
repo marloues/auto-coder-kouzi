@@ -48,45 +48,68 @@ const selectAgent = (id: string) => {
   --text-color: #fff;
   --highlight-color: #4fc3f7;
   
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   color: var(--text-color);
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: var(--highlight-color);
+  position: relative;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--highlight-color), transparent);
+  }
 }
 
 .subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0.8;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  line-height: 1.5;
 }
 
 .agent-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .agent-item {
-  padding: 10px 16px;
+  padding: 12px 20px;
   background-color: var(--primary-color);
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  min-width: 180px;
   
   &:hover {
     background-color: var(--hover-color);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
   
   &.active {
     background-color: var(--active-color);
-    box-shadow: 0 0 0 2px var(--highlight-color);
+    box-shadow: 0 0 0 3px var(--highlight-color), 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    min-width: 100%;
   }
 }
 </style>
