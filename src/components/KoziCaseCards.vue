@@ -22,21 +22,43 @@
 <style scoped>
 .kozi-case-cards {
   display: flex;
-  gap: 20px;
-  color: #fff;
+  gap: 24px;
+  padding: 16px;
+  color: #2d3748;
 }
+
 .case-card {
   flex: 1;
-  background-color: #3a3a3a;
-  padding: 15px;
-  border-radius: 4px;
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
 .case-card h2 {
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #4a5568;
+  font-weight: 600;
 }
+
 .case-card p {
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #718096;
+}
+
+@media (max-width: 768px) {
+  .kozi-case-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 </style>
