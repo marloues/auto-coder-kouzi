@@ -29,18 +29,22 @@ import KoziSidebar from '@/components/KoziSidebar.vue'
 .main-layout {
   flex: 1;
   display: flex;
+  height: calc(100vh - 64px); /* 减去header高度 */
 }
 
 .sidebar {
   width: 240px;
   background: #f8f9fa;
   border-right: 1px solid #e9ecef;
+  height: 100%;
 }
 
 .content-view {
   flex: 1;
   padding: 24px;
   background: white;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .fade-enter-active,
