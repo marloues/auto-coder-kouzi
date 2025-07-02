@@ -3,16 +3,20 @@
     <h1>你好，RootUser_2107250068</h1>
     <div class="input-area">
       <div class="input-wrapper">
-        <input
-          type="text"
-          placeholder="给我布置一个任务（可以让我写文章、做PPT、做播客...）"
-          class="task-input"
-        />
-        <div class="btn-group">
-          <button class="btn">附件</button>
-          <button class="btn">扩展</button>
-          <button class="btn">自动</button>
-          <button class="send-btn">发送</button>
+        <div class="textarea-container">
+          <textarea
+            placeholder="给我布置一个任务（可以让我写文章、做PPT、做播客...）"
+            class="task-input"
+            rows="3"
+          ></textarea>
+          <div class="btn-group">
+            <div class="left-buttons">
+              <button class="btn">附件</button>
+              <button class="btn">扩展</button>
+              <button class="btn">自动</button>
+            </div>
+            <button class="send-btn">发送</button>
+          </div>
         </div>
       </div>
     </div>
@@ -39,44 +43,58 @@
   position: relative;
   width: 100%;
 }
+.textarea-container {
+  position: relative;
+  width: 100%;
+}
+
 .task-input {
   width: 100%;
-  padding: 10px 120px 10px 10px;
+  padding: 10px;
   background-color: #3a3a3a;
   border: 1px solid #4f4f4f;
   color: #fff;
   border-radius: 4px;
   transition: all 0.3s;
+  resize: vertical;
+  min-height: 60px;
+  box-sizing: border-box;
 }
 .task-input:focus {
   border-color: #67c23a;
   outline: none;
 }
 .btn-group {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
-  gap: 6px;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.left-buttons {
+  display: flex;
+  gap: 8px;
 }
 .btn {
-  padding: 6px 10px;
+  padding: 8px 12px;
   background-color: #4f4f4f;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
 }
 .btn:hover {
   background-color: #5a5a5a;
+  transform: translateY(-1px);
 }
 .send-btn {
   background-color: #67c23a;
+  padding: 8px 16px;
+  font-weight: 600;
 }
 .send-btn:hover {
   background-color: #5daf34;
+  transform: translateY(-1px);
 }
 </style>
