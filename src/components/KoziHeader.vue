@@ -81,12 +81,13 @@
   padding: 8px 12px;
   background-color: #2a2a2a;
   color: #fff;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 13px;
   font-weight: 500;
+  margin: 0 4px;
 }
 .btn:hover {
   background-color: #5a5a5a;
