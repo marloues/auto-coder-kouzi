@@ -127,6 +127,7 @@ const taskGroups = [
   font-size: 13px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   transition: all 0.2s ease;
   width: 100%;
