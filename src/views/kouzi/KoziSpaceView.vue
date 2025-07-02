@@ -28,5 +28,8 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
 .main-content {
   flex: 1;
   padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 </style>
