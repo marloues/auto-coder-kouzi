@@ -22,11 +22,11 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
 .kozi-space-page {
   display: flex;
   height: 100vh;
-  background-color: #1e1e2d;
+  background-color: rgb(33,37,52);
   color: #fff;
 }
 .main-content {
-  background-color: rgb(27,33,49);
+  background-color: rgb(33,37,52);
   flex: 1;
   padding: 20px;
   margin: 5px;
