@@ -26,10 +26,10 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
   color: #fff;
 }
 .main-content {
+  background-color: rgb(27,33,49);
   flex: 1;
   padding: 20px;
   margin: 5px;
-  background-color: rgba(22, 26, 40, 0.5);
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
