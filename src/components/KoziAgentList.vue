@@ -29,7 +29,7 @@
 }
 .agent-item {
   padding: 8px 12px;
-  background-color: #3a3a3a;
+  background-color: hsl(227.37,26.03%,14.31%);
   border-radius: 4px;
   cursor: pointer;
 }
