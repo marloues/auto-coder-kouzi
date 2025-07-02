@@ -98,6 +98,13 @@ const selectAgent = (id: string) => {
   .agent-icon {
     font-size: 1.2rem;
     color: var(--highlight-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 8px;
   }
   flex-wrap: wrap;
   gap: 16px;
