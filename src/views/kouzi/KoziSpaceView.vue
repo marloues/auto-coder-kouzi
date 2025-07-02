@@ -26,7 +26,7 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
   color: #fff;
 }
 .main-content {
-  background-color: hsl(227.37,22.35%,16.67%);
+  background-color: rgb(25,27,45);
   flex: 1;
   padding: 20px;
   margin: 5px;
