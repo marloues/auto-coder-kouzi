@@ -29,7 +29,7 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
   background-color: rgb(25,27,45);
   flex: 1;
   padding: 20px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
