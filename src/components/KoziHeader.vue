@@ -31,9 +31,7 @@
 .kozi-header {
   margin-bottom: 20px;
   color: #fff;
-  background-color: #2a2a2a;
   padding: 20px;
-  border-radius: 8px;
 }
 .kozi-header h1 {
   font-size: 24px;
@@ -41,6 +39,9 @@
 }
 .input-area {
   position: relative;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
 }
 .input-wrapper {
   position: relative;
