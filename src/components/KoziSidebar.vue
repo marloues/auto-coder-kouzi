@@ -1,9 +1,14 @@
 <template>
   <aside class="kozi-sidebar">
     <div class="sidebar-header">
-      <div class="logo">
-        <span class="logo-icon">⚙️</span>
-        <span>扣子空间</span>
+      <div class="header-top">
+        <div class="logo">
+          <span class="logo-icon">⚙️</span>
+          <span>扣子空间</span>
+        </div>
+        <button class="collapse-btn">
+          <span class="collapse-icon">≡</span>
+        </button>
       </div>
       <button class="new-task-btn">
         <span class="plus-icon">+</span>
@@ -71,12 +76,32 @@ const taskGroups = [
 }
 
 .sidebar-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 24px;
   padding-bottom: 16px;
   border-bottom: 1px solid #2d2d3d;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.collapse-btn {
+  padding: 6px;
+  background-color: transparent;
+  color: #a0a0c0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.collapse-btn:hover {
+  background-color: #2d2d3d;
+  color: #ffffff;
 }
 
 .logo {
