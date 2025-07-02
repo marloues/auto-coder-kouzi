@@ -39,7 +39,7 @@
 }
 .input-area {
   position: relative;
-  background-color: #2a2a2a;
+  background-color: hsl(227.37,19.59%,19.02%);
   border-radius: 8px;
   padding: 20px;
 }
