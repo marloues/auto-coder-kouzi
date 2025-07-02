@@ -66,7 +66,7 @@ const taskGroups = [
 .kozi-sidebar {
   width: 260px;
   height: 100vh;
-  background-color: #1e1e2d;
+  background-color: hsl(227.37,22.35%,16.67%);
   padding: 24px 20px;
   box-sizing: border-box;
   color: #e0e0e0;
@@ -99,7 +99,7 @@ const taskGroups = [
 }
 
 .collapse-btn:hover {
-  background-color: #2d2d3d;
+  background-color: hsl(227.37,22.35%,20%);
   color: #ffffff;
 }
 
@@ -183,7 +183,7 @@ const taskGroups = [
 }
 
 .task-item:hover {
-  background-color: #2d2d3d;
+  background-color: hsl(227.37,22.35%,20%);
   color: #ffffff;
 }
 
