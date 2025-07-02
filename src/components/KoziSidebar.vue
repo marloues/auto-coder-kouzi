@@ -72,7 +72,6 @@ const taskGroups = [
   color: #e0e0e0;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #3a3a4a;
 }
 
 .sidebar-header {
