@@ -31,6 +31,9 @@
 .kozi-header {
   margin-bottom: 20px;
   color: #fff;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
 }
 .kozi-header h1 {
   font-size: 24px;
@@ -52,7 +55,7 @@
   width: 100%;
   padding: 10px;
   background-color: #3a3a3a;
-  border: 1px solid #4f4f4f;
+  border: none;
   color: #fff;
   border-radius: 4px;
   transition: all 0.3s;
