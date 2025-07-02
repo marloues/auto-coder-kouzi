@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/App.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/3a2014c0-4784-488a-9774-51a764657ee1_20250702-234538.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 现在需要做左右结构，左边放KoziSidebar，右边放其余的组件
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

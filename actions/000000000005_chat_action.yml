@@ -1,0 +1,15 @@
+add_updated_urls: []
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/39ccddfe-9282-4721-98cd-6bdf9835cfc7_20250702-234413.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 分析当前项目的页面结构
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

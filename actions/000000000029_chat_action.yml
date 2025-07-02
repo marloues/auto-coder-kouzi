@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/a45e0f48-37b2-4ebc-9b9d-e38ad6852507_20250703-003404.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改项目整体的背景色和koziSidebar的背景色为：hsl(227.37,22.35%,16.67%)
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

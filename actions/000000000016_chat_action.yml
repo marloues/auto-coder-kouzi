@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/ff83b7d2-bc0b-4929-a1b9-accd31153f47_20250703-000127.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 将 新任务 居中对齐
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

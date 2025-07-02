@@ -1,0 +1,14 @@
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/b5998698-ae09-42f1-b6f5-bf66dbae9317_20250703-010147.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 添加一些图标
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

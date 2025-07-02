@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/views/kouzi/KoziSpaceView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/719bd2de-10e3-43c9-a862-2ae16dc13713_20250703-010945.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 对main-content中各个组件再次美化，显得科技感点儿
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

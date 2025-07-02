@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/style.css
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/d398f33c-0500-4941-92f4-8fe3a38adc51_20250703-012122.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 去掉#app的最大宽度限制
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

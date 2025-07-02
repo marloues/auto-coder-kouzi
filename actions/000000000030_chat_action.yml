@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/3cac6715-2eaa-4463-9ebc-cec80becf5dc_20250703-003559.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改KoziHeader.vue文件，将button按钮放到输入框内部，且美化下
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

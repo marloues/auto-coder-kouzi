@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziCaseCards.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/aa7df12a-f9e4-432c-9eca-192ad35e8bc5_20250703-012615.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: KoziCaseCards.vue中卡片的背景色不要白色太突兀了，深色点儿
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

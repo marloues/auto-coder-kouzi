@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziAgentList.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/2562c54d-52eb-449e-a65d-1c122cfdcb56_20250703-005933.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改KoziAgentList.vue中所有agent-item的背景色为：hsl(227.37,26.03%,14.31%)
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

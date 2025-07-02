@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/40483945-b6c1-4cd9-ad03-43a38f565849_20250703-000038.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 将KoziSidebar中的 新任务 按钮，占满当前行
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

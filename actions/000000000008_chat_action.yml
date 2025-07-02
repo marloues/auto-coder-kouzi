@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/App.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/c6949871-af13-45c9-84cc-29f45f5c6493_20250702-235036.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 去掉app中样式，使router-view中的组件占满全局
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

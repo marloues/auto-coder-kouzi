@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziTagList.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/e2bb93b5-bc86-434c-8857-67a9afd1dc91_20250703-010513.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 现在美化下KoziTagList.vue
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

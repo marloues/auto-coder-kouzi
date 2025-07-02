@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/6a0ebca7-3558-499c-ac75-4ea7e2421efe_20250703-003839.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: KoziHeader.vue用div包裹textarea实现，输入框和按钮上下排布，按钮前三个和发送左右排布，按钮美化下
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

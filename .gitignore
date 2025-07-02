@@ -23,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-.auto-coder/
-/actions/
-/output.txt

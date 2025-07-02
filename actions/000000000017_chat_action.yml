@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/8eceb057-b2e5-4ac8-a8f9-5b37f4f4b134_20250703-000322.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 现在美化下KoziHeader.vue的样式
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

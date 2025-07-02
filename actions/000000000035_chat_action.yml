@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/2a300d19-94f1-40c6-b19b-70a2e70609c1_20250703-004825.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 给left-buttons加椭圆透明的边框
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

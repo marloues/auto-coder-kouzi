@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/410801b7-ca06-43a7-9857-4c6acd14a98d_20250703-004320.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改KoziHeader.vue中input-area的样式，统一背景色，不要把H1元素也包进来了
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

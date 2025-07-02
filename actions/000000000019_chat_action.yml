@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/26d953e3-d042-445f-9e8c-b4d3c4b5c706_20250703-000903.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 再加点儿边距，边框颜色不要太深，最好和左边的颜色差不多
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

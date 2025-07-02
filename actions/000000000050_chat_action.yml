@@ -1,0 +1,14 @@
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/4ce4461b-2d9f-4087-b388-a186973a9a4e_20250703-011158.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 给KoziAgentList.vue中的按钮文字前加点儿图标小图片之类的
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

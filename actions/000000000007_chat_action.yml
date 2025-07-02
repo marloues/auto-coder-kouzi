@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/App.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/d26fc3ad-1da7-4935-99db-903c42d691c4_20250702-234802.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 不要在app文件内引用KoziHeader和KoziSidebar
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

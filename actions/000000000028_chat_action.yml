@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/19ba67f0-3558-41aa-96ef-ecea4761b9c9_20250703-003144.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 去掉KoziSidebar的右边线
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

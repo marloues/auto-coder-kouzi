@@ -1,0 +1,14 @@
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/bb4493b0-85f6-4268-8b95-eca7abfed364_20250702-221627.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 仿写一个扣子空间的页面
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

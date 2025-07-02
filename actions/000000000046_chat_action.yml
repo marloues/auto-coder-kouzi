@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziCaseCards.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/a80a0f5b-2dbe-460d-bff6-41d762f26c55_20250703-010555.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 美化下KoziCaseCards.vue
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

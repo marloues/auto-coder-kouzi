@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/592d1a1c-0329-436c-bf26-dd22df89dfa8_20250703-004718.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改KoziHeader.vue中的textarea和left-buttons的背景色和input-area保持一直
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

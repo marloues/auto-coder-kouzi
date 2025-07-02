@@ -1,0 +1,21 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/views/workspace/WorkspaceView.vue
+- /Users/xuzong/workspace/vue3-project/views/workspace/components/CreateModal.vue
+- /Users/xuzong/workspace/vue3-project/views/workspace/components/WorkspaceHeader.vue
+- /Users/xuzong/workspace/vue3-project/views/workspace/components/WorkspaceItem.vue
+- /Users/xuzong/workspace/vue3-project/views/workspace/components/WorkspaceSidebar.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/390bbef3-1365-4c60-a0b8-3f19b22d90e3_20250702-222029.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 仿照：https://space.coze.cn/?utm_source=bing&utm_medium=sem&utm_term=coze_bing_sem_dm_cpc_pc_czkj_pp_guanw_1&utm_campaign=486599295&utm_content=home&utm_id=0&utm_source_platform=pc&msclkid=5d5f4d8e20351cdec3d625eb1f95a2a9&category=7513030493395238921
+  这个页面写一个页面，写在views/workspace文件夹下，如果没有文件夹就新建，你自己划分组件
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

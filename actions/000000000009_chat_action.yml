@@ -1,0 +1,17 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/assets/reset.css
+- /Users/xuzong/workspace/vue3-project/src/main.ts
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/712e0ceb-968b-445e-bb78-e375f2d562c9_20250702-235129.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 去掉浏览器的默认样式
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

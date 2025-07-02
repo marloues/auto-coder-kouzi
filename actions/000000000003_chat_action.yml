@@ -1,0 +1,22 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/package-lock.json
+- /Users/xuzong/workspace/vue3-project/package.json
+- /Users/xuzong/workspace/vue3-project/src/App.vue
+- /Users/xuzong/workspace/vue3-project/src/main.ts
+- /Users/xuzong/workspace/vue3-project/src/router/index.ts
+- /Users/xuzong/workspace/vue3-project/src/views/AboutView.vue
+- /Users/xuzong/workspace/vue3-project/src/views/HomeView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/2e1c6e2b-0599-4aed-8ef6-efca5da773be_20250702-222253.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 把view放到src目录下，并添加对应的router
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

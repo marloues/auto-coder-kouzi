@@ -1,0 +1,13 @@
+{
+  "conversation": [],
+  "current_files": {
+    "files": [],
+    "groups": {}
+  },
+  "conf": {
+    "project_type": ".css,.html,.json,.ts,.vue,.yml",
+    "event_file": "/Users/xuzong/workspace/vue3-project/.auto-coder/events/d01233ca-e19c-4a3f-8c0f-a882bf8adffb_20250703-012837.jsonl"
+  },
+  "exclude_dirs": [],
+  "mode": "auto_detect"
+}

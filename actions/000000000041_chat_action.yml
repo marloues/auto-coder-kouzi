@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/components/KoziHeader.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/aa5e428d-4020-4997-baa4-1d0b4e6f0f41_20250703-005709.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改KoziHeader.vue中textarea和left-buttons的子元素的背景色为：hsl(227.37,19.59%,19.02%)
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

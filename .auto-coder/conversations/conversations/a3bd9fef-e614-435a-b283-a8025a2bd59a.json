@@ -1,0 +1,158 @@
+{
+  "conversation_id": "a3bd9fef-e614-435a-b283-a8025a2bd59a",
+  "name": "添加一些图标",
+  "description": "添加一些图标",
+  "created_at": 1751475708.162816,
+  "updated_at": 1751475842.900214,
+  "messages": [
+    {
+      "role": "user",
+      "content": "添加一些图标",
+      "timestamp": 1751475708.235289,
+      "message_id": "7d461bac-9a67-4ae9-96fd-62dce656ffd4",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 首先需要了解当前Vue3项目的结构和已有的图标资源\n2. 需要确定要添加哪些图标以及从哪里获取\n3. 常见的图标解决方案有：\n   - 使用现有的图标库如Font Awesome、Material Icons\n   - 添加自定义SVG图标\n   - 使用专门的Vue图标组件库如vue-icons\n\n4. 查看项目结构中的package.json可以了解是否已有图标库依赖\n5. 需要检查项目中图标的使用方式以保持一致性\n</thinking>\n\n<execute_command>\n<command>grep -i \"icon\" package.json</command>\n<requires_approval>false</requires_approval>\n</execute_command>",
+      "timestamp": 1751475713.2259998,
+      "message_id": "b430a20a-4484-494e-85ad-c1aad44694fc",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='ExecuteCommandTool' success='false'><message>Command failed with return code 1.\nOutput:\n</message><content>{'output': '', 'returncode': 1}</content></tool_result>",
+      "timestamp": 1751475713.2922618,
+      "message_id": "bc841733-0755-4ee1-b92e-5dbcc00a2890",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 命令返回空结果，说明package.json中没有直接包含\"icon\"相关的依赖\n2. 需要检查项目中是否已有图标组件或目录\n3. 建议使用Font Awesome作为图标解决方案，因为：\n   - 它是流行的图标库\n   - 有完善的Vue集成\n   - 提供免费和付费图标\n   - 易于使用\n</thinking>\n\n<execute_command>\n<command>npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome</command>\n<requires_approval>true</requires_approval>\n</execute_command>",
+      "timestamp": 1751475717.85059,
+      "message_id": "ac95c5fd-3685-4d10-a28e-08f238b729d7",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='ExecuteCommandTool' success='false'><message>Command 'npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome' execution denied by user.</message><content></content></tool_result>",
+      "timestamp": 1751475721.5984588,
+      "message_id": "b280f927-a5fe-4d48-a42f-79ba0cfb5875",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 用户拒绝了安装Font Awesome的请求\n2. 需要寻找替代方案：\n   - 使用原生SVG图标\n   - 使用其他不需要安装的图标解决方案\n   - 检查项目中是否已有图标资源\n\n3. 先查看项目中是否有assets/icons目录\n</thinking>\n\n<list_files>\n<path>src/assets</path>\n<recursive>true</recursive>\n</list_files>",
+      "timestamp": 1751475724.969026,
+      "message_id": "347f0517-af4d-4dd6-8e34-1e6705a22b3a",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='ListFilesTool' success='true'><message>Successfully listed contents of 'src/assets' (Recursive: True). Found 2 items.</message><content>['src/assets/reset.css', 'src/assets/vue.svg']</content></tool_result>",
+      "timestamp": 1751475725.027322,
+      "message_id": "438bf6c2-8009-4d76-b36d-ee450e9a9c2d",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 项目assets目录中只有reset.css和vue.svg文件，没有专门的图标资源\n2. 既然用户不希望安装新的图标库，建议：\n   - 使用原生SVG图标\n   - 从免费图标网站下载需要的SVG图标\n   - 创建icons目录存放SVG文件\n\n3. 需要确认用户想要添加哪些具体图标\n</thinking>\n\n<ask_followup_question>\n<question>您想要添加哪些具体图标？例如：搜索图标、用户图标、菜单图标等。我可以帮您找到合适的SVG图标并添加到项目中。</question>\n<options>[\"搜索图标\", \"用户图标\", \"菜单图标\", \"其他\"]</options>\n</ask_followup_question>",
+      "timestamp": 1751475730.1461802,
+      "message_id": "b0c704f0-8356-4a1c-a54d-3605d45ce489",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='AskFollowupQuestionTool' success='true'><message>Follow-up question prepared.</message><content>随你，合适的就行</content></tool_result>",
+      "timestamp": 1751475761.784302,
+      "message_id": "0750eca7-256e-4d57-9d07-88d52ed767ae",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 用户表示对图标类型没有特定要求\n2. 建议添加一组常用的基础UI图标：\n   - 搜索图标\n   - 用户图标\n   - 菜单图标\n   - 主页图标\n   - 设置图标\n\n3. 创建icons目录并添加这些SVG图标\n4. 使用Vue组件封装这些图标以便复用\n</thinking>\n\n<execute_command>\n<command>mkdir -p src/assets/icons</command>\n<requires_approval>false</requires_approval>\n</execute_command>",
+      "timestamp": 1751475765.7518358,
+      "message_id": "1bbfc059-01a7-4f4e-a3e7-8795f9bde11a",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='ExecuteCommandTool' success='true'><message>Command executed successfully.</message><content></content></tool_result>",
+      "timestamp": 1751475765.812848,
+      "message_id": "943ac4f7-b160-4064-82fc-18e84a9ea87c",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 已成功创建src/assets/icons目录\n2. 现在需要添加几个常用SVG图标：\n   - 搜索图标 (magnifying-glass.svg)\n   - 用户图标 (user.svg)\n   - 菜单图标 (bars.svg)\n   - 主页图标 (house.svg)\n   - 设置图标 (gear.svg)\n\n3. 这些图标将使用标准的SVG格式\n4. 创建Vue组件来封装这些图标\n</thinking>\n\n<write_to_file>\n<path>src/assets/icons/magnifying-glass.svg</path>\n<content>\n\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\n  &lt;path d=\"M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z\"/&gt;\n  &lt;path fill-rule=\"evenodd\" d=\"M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z\" clip-rule=\"evenodd\"/&gt;\n&lt;/svg&gt;\n\n</content>\n</write_to_file>",
+      "timestamp": 1751475777.4934258,
+      "message_id": "da7522b1-3716-4bea-9f61-a2f59859a021",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='WriteToFileTool' success='true'><message>src/assets/icons/magnifying-glass.svg</message><content>{'content': '\\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\\n  &lt;path d=\"M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z\"/&gt;\\n  &lt;path fill-rule=\"evenodd\" d=\"M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z\" clip-rule=\"evenodd\"/&gt;\\n&lt;/svg&gt;\\n'}</content></tool_result>",
+      "timestamp": 1751475777.548612,
+      "message_id": "eb6c6431-8aaa-4486-90cc-44d7f9eca098",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 已成功创建搜索图标\n2. 继续添加其他常用图标\n3. 接下来添加用户图标\n</thinking>\n\n<write_to_file>\n<path>src/assets/icons/user.svg</path>\n<content>\n\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\n  &lt;path fill-rule=\"evenodd\" d=\"M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z\" clip-rule=\"evenodd\" /&gt;\n&lt;/svg&gt;\n\n</content>\n</write_to_file>",
+      "timestamp": 1751475785.3384461,
+      "message_id": "297fcf91-a0f1-4f8a-b774-8aa0d1fff211",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='WriteToFileTool' success='true'><message>src/assets/icons/user.svg</message><content>{'content': '\\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\\n  &lt;path fill-rule=\"evenodd\" d=\"M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z\" clip-rule=\"evenodd\" /&gt;\\n&lt;/svg&gt;\\n'}</content></tool_result>",
+      "timestamp": 1751475785.401105,
+      "message_id": "4c0a889d-c474-49c5-9990-4ebc7964d2ee",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 已成功创建用户图标\n2. 继续添加菜单图标\n3. 菜单图标通常用于移动端导航\n</thinking>\n\n<write_to_file>\n<path>src/assets/icons/bars.svg</path>\n<content>\n\n\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\n  &lt;path fill-rule=\"evenodd\" d=\"M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z\" clip-rule=\"evenodd\" /&gt;\n&lt;/svg&gt;\n\n\n</content>\n</write_to_file>",
+      "timestamp": 1751475794.640181,
+      "message_id": "7e1ec835-b0ab-4c87-8c60-9679f5fd78a6",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='WriteToFileTool' success='true'><message>src/assets/icons/bars.svg</message><content>{'content': '\\n\\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\\n  &lt;path fill-rule=\"evenodd\" d=\"M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z\" clip-rule=\"evenodd\" /&gt;\\n&lt;/svg&gt;\\n\\n'}</content></tool_result>",
+      "timestamp": 1751475794.700886,
+      "message_id": "445e9d89-dd40-485a-94ce-c5c95cf5f187",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 已成功创建菜单图标\n2. 继续添加主页图标\n3. 主页图标通常用于导航回首页\n</thinking>\n\n<write_to_file>\n<path>src/assets/icons/house.svg</path>\n<content>\n\n\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\n  &lt;path d=\"M11.47 3.84a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.06l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 0 0 1.061 1.06l8.69-8.69Z\" /&gt;\n  &lt;path d=\"m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.43Z\" /&gt;\n&lt;/svg&gt;\n\n\n</content>\n</write_to_file>",
+      "timestamp": 1751475807.676245,
+      "message_id": "8ae78593-17a6-411c-ae53-61e8b6a6bef6",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='WriteToFileTool' success='true'><message>src/assets/icons/house.svg</message><content>{'content': '\\n\\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\\n  &lt;path d=\"M11.47 3.84a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.06l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 0 0 1.061 1.06l8.69-8.69Z\" /&gt;\\n  &lt;path d=\"m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.43Z\" /&gt;\\n&lt;/svg&gt;\\n\\n'}</content></tool_result>",
+      "timestamp": 1751475807.738235,
+      "message_id": "14449857-2258-452f-a68c-53d83955c96b",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\n1. 已成功创建主页图标\n2. 继续添加设置图标\n3. 设置图标通常用于配置或参数页面\n</thinking>\n\n<write_to_file>\n<path>src/assets/icons/gear.svg</path>\n<content>\n\n\n\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\n  &lt;path fill-rule=\"evenodd\" d=\"M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 0 0-.986.57c-.166.115-.334.126-.45.083-.18-.073-.288-.23-.288-.43 0-.172.085-.334.218-.403a9.007 9.007 0 0 1 1.036-.352l.007-.001.025-.005a.75.75 0 0 1 .9.9l-.005.025a8.951 8.951 0 0 1-.352 1.035c-.07.134-.232.22-.405.22-.202 0-.357-.11-.43-.288a.513.513 0 0 1 .083-.45c.19-.269.392-.555.57-.986.088-.182.227-.277.347-.297l1.103-.176c.902-.144 1.55-.933 1.55-1.85 0-.98-.726-1.82-1.75-1.98V2.25a.75.75 0 0 1 1.5 0v1.018c1.239.129 2.25 1.2 2.25 2.482a2.75 2.75 0 0 1-2.25 2.482V8.5a.75.75 0 0 1-1.5 0V5.732a2.75 2.75 0 0 1-1.673-.723 9.054 9.054 0 0 1-.599-1.458l-.003-.008a.75.75 0 0 1 .9-.9l.008.003c.115.033.231.1.353.2.21.18.409.571.456.99l.003.01.004.023a.75.75 0 0 1-.9.9l-.022-.004a8.951 8.951 0 0 1-1.036-.352 8.96 8.96 0 0 1-.403-.218c-.07-.069-.22-.218-.22-.404 0-.2.108-.356.288-.43.115-.042.283-.03.448.084.275.192.56.394.986.57.182.089.276.228.297.35l.177 1.102c.144.902.933 1.55 1.85 1.55.98 0 1.82-.726 1.98-1.75H19.5a.75.75 0 0 1 0 1.5h-1.018a2.75 2.75 0 0 1-2.482 2.25H15.5a.75.75 0 0 1 0-1.5h1.018a2.75 2.75 0 0 1 2.482-2.25c.902-.144 1.55-.933 1.55-1.85 0-.98-.726-1.82-1.75-1.98V2.25a.75.75 0 0 1 1.5 0v1.018c1.239.129 2.25 1.2 2.25 2.482a2.75 2.75 0 0 1-2.25 2.482V8.5a.75.75 0 0 1-1.5 0V5.732a2.75 2.75 0 0 1-1.673-.723 9.054 9.054 0 0 1-.599-1.458l-.003-.008a.75.75 0 0 1 .9-.9l.008.003c.115.033.231.1.353.2.21.18.409.571.456.99l.003.01.004.023a.75.75 0 0 1-.9.9l-.022-.004a8.951 8.951 0 0 1-1.036-.352 8.96 8.96 0 0 1-.403-.218c-.07-.069-.22-.218-.22-.404 0-.2.108-.356.288-.43.115-.042.283-.03.448.084.275.192.56.394.986.57.182.089.276.228.297.35l.177 1.102c.144.902.933 1.55 1.85 1.55.98 0 1.82-.726 1.98-1.75H19.5a.75.75 0 0 1 0 1.5h-1.018a2.75 2.75 0 0 1-2.482 2.25H15.5a.75.75 0 0 1 0-1.5h1.018a2.75 2.75 0 0 1 2.482-2.25Z\" clip-rule=\"evenodd\" /&gt;\n&lt;/svg&gt;\n\n\n\n</content>\n</write_to_file>",
+      "timestamp": 1751475842.825786,
+      "message_id": "bc4b924f-974a-4e2d-9591-a4047010dffc",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "<tool_result tool_name='WriteToFileTool' success='true'><message>src/assets/icons/gear.svg</message><content>{'content': '\\n\\n\\n&lt;svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"&gt;\\n  &lt;path fill-rule=\"evenodd\" d=\"M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 0 0-.986.57c-.166.115-.334.126-.45.083-.18-.073-.288-.23-.288-.43 0-.172.085-.334.218-.403a9.007 9.007 0 0 1 1.036-.352l.007-.001.025-.005a.75.75 0 0 1 .9.9l-.005.025a8.951 8.951 0 0 1-.352 1.035c-.07.134-.232.22-.405.22-.202 0-.357-.11-.43-.288a.513.513 0 0 1 .083-.45c.19-.269.392-.555.57-.986.088-.182.227-.277.347-.297l1.103-.176c.902-.144 1.55-.933 1.55-1.85 0-.98-.726-1.82-1.75-1.98V2.25a.75.75 0 0 1 1.5 0v1.018c1.239.129 2.25 1.2 2.25 2.482a2.75 2.75 0 0 1-2.25 2.482V8.5a.75.75 0 0 1-1.5 0V5.732a2.75 2.75 0 0 1-1.673-.723 9.054 9.054 0 0 1-.599-1.458l-.003-.008a.75.75 0 0 1 .9-.9l.008.003c.115.033.231.1.353.2.21.18.409.571.456.99l.003.01.004.023a.75.75 0 0 1-.9.9l-.022-.004a8.951 8.951 0 0 1-1.036-.352 8.96 8.96 0 0 1-.403-.218c-.07-.069-.22-.218-.22-.404 0-.2.108-.356.288-.43.115-.042.283-.03.448.084.275.192.56.394.986.57.182.089.276.228.297.35l.177 1.102c.144.902.933 1.55 1.85 1.55.98 0 1.82-.726 1.98-1.75H19.5a.75.75 0 0 1 0 1.5h-1.018a2.75 2.75 0 0 1-2.482 2.25H15.5a.75.75 0 0 1 0-1.5h1.018a2.75 2.75 0 0 1 2.482-2.25c.902-.144 1.55-.933 1.55-1.85 0-.98-.726-1.82-1.75-1.98V2.25a.75.75 0 0 1 1.5 0v1.018c1.239.129 2.25 1.2 2.25 2.482a2.75 2.75 0 0 1-2.25 2.482V8.5a.75.75 0 0 1-1.5 0V5.732a2.75 2.75 0 0 1-1.673-.723 9.054 9.054 0 0 1-.599-1.458l-.003-.008a.75.75 0 0 1 .9-.9l.008.003c.115.033.231.1.353.2.21.18.409.571.456.99l.003.01.004.023a.75.75 0 0 1-.9.9l-.022-.004a8.951 8.951 0 0 1-1.036-.352 8.96 8.96 0 0 1-.403-.218c-.07-.069-.22-.218-.22-.404 0-.2.108-.356.288-.43.115-.042.283-.03.448.084.275.192.56.394.986.57.182.089.276.228.297.35l.177 1.102c.144.902.933 1.55 1.85 1.55.98 0 1.82-.726 1.98-1.75H19.5a.75.75 0 0 1 0 1.5h-1.018a2.75 2.75 0 0 1-2.482 2.25H15.5a.75.75 0 0 1 0-1.5h1.018a2.75 2.75 0 0 1 2.482-2.25Z\" clip-rule=\"evenodd\" /&gt;\\n&lt;/svg&gt;\\n\\n\\n'}</content></tool_result>",
+      "timestamp": 1751475842.900039,
+      "message_id": "3a167ce2-bbec-4e22-a054-b9dae02e7c74",
+      "metadata": {}
+    }
+  ],
+  "metadata": {},
+  "version": 1
+}

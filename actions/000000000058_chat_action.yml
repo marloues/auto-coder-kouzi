@@ -1,0 +1,14 @@
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/d74ae9e7-e8fd-4f1e-a4c5-a9de85d5797a_20250703-012539.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 颜色深一点儿
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

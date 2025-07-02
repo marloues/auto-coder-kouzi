@@ -1,0 +1,17 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/style.css
+- /Users/xuzong/workspace/vue3-project/src/views/kouzi/KoziSpaceView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/83f6a038-e4c5-4735-ba04-331217c0a600_20250703-002734.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改整体背景色为：hsl(227.37,22.35%,16.67%)
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

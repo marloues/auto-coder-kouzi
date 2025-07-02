@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/views/kouzi/KoziSpaceView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/dac713bf-2e82-4842-afd2-e5e6672de1b6_20250703-003023.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改main-content的外边距为15px
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

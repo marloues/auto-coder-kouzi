@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/views/kouzi/KoziSpaceView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/95d4c729-8453-4505-9832-cf6043b1d30c_20250703-002927.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改main-content的背景色为：rgb(25,27,45)
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []

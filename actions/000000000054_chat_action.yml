@@ -1,0 +1,16 @@
+add_updated_urls:
+- /Users/xuzong/workspace/vue3-project/src/views/kouzi/KoziSpaceView.vue
+auto_merge: editblock
+context: ''
+event_file: /Users/xuzong/workspace/vue3-project/.auto-coder/events/53c79380-cb04-4032-9953-72b0b0c36c54_20250703-011946.jsonl
+exclude_files: []
+human_as_model: false
+include_file:
+- ./base/base.yml
+include_project_structure: true
+project_type: .css,.html,.json,.ts,.vue,.yml
+query: 修改main-content的宽度占右边全部
+silence: true
+skip_build_index: true
+skip_confirm: true
+urls: []
