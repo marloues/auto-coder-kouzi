@@ -50,8 +50,9 @@
 }
 
 .tag-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(98, 154, 255, 0.8);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 </style>
