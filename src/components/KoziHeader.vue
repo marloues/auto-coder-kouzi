@@ -32,6 +32,7 @@
   margin-bottom: 20px;
   color: #fff;
   padding: 20px;
+  background-color: hsl(227.37,19.59%,19.02%);
 }
 .kozi-header h1 {
   font-size: 24px;
