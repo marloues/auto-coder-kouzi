@@ -14,6 +14,17 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/workspace',
+      name: 'workspace',
+      component: () => import('../views/workspace/WorkspaceView.vue'),
+      children: [
+        {
+          path: 'create',
+          component: () => import('../views/workspace/components/CreateModal.vue')
+        }
+      ]
     }
   ]
 })
