@@ -55,7 +55,7 @@
 .task-input {
   width: 100%;
   padding: 10px;
-  background-color: #2a2a2a;
+  background-color: hsl(227.37,19.59%,19.02%);
   border: none;
   color: #fff;
   border-radius: 4px;
@@ -79,7 +79,7 @@
 }
 .btn {
   padding: 8px 16px;
-  background-color: #2a2a2a;
+  background-color: hsl(227.37,19.59%,19.02%);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
