@@ -1,26 +1,55 @@
 <script setup lang="ts">
-import KouziSpace from './components/KouziSpace.vue'
+import KoziHeader from '@/components/KoziHeader.vue'
+import KoziSidebar from '@/components/KoziSidebar.vue'
 </script>
 
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <KouziSpace />
-  <router-view/>
+  <div class="app-container">
+    <KoziHeader class="h-16 border-b" />
+    
+    <div class="main-layout">
+      <KoziSidebar class="sidebar" />
+      
+      <main class="content-view">
+        <Transition name="fade" mode="out-in">
+          <router-view />
+        </Transition>
+      </main>
+    </div>
+  </div>
 </template>
 
-<style>
-body {
-  margin: 0;
-  background-color: #f5f5f5;
+<style scoped>
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-nav {
-  padding: 1rem;
-  text-align: center;
+
+.main-layout {
+  flex: 1;
+  display: flex;
 }
-nav a {
-  padding: 0 1rem;
+
+.sidebar {
+  width: 240px;
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+}
+
+.content-view {
+  flex: 1;
+  padding: 24px;
+  background: white;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

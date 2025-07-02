@@ -1,32 +1,15 @@
-
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
+      path: "/",
+      name: "koziSpace",
+      component: () => import("../views/kouzi/KoziSpaceView.vue")
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/workspace',
-      name: 'workspace',
-      component: () => import('../views/workspace/WorkspaceView.vue'),
-      children: [
-        {
-          path: 'create',
-          component: () => import('../views/workspace/components/CreateModal.vue')
-        }
-      ]
-    }
-  ]
-})
 
-export default router
+  ],
+});
+
+export default router;
