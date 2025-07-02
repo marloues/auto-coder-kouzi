@@ -67,18 +67,18 @@ const taskGroups = [
   width: 260px;
   height: 100vh;
   background-color: #1e1e2d;
-  padding: 20px 16px;
+  padding: 24px 20px;
   box-sizing: border-box;
   color: #e0e0e0;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #2d2d3d;
+  border-right: 1px solid #3a3a4a;
 }
 
 .sidebar-header {
   margin-bottom: 24px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #2d2d3d;
+  border-bottom: 1px solid #3a3a4a;
 }
 
 .header-top {
@@ -176,7 +176,7 @@ const taskGroups = [
 
 .task-item {
   font-size: 13px;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
