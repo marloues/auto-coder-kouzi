@@ -129,6 +129,7 @@ const taskGroups = [
   align-items: center;
   gap: 4px;
   transition: all 0.2s ease;
+  width: 100%;
 }
 
 .new-task-btn:hover {
