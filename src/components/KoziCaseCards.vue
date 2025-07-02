@@ -22,43 +22,80 @@
 <style scoped>
 .kozi-case-cards {
   display: flex;
-  gap: 24px;
-  padding: 16px;
-  color: #2d3748;
+  gap: 28px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .case-card {
   flex: 1;
-  background: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  min-height: 200px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.case-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 
 .case-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 
+    0 10px 15px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+  border-color: rgba(203, 213, 225, 0.8);
 }
 
 .case-card h2 {
-  font-size: 18px;
-  margin-bottom: 12px;
-  color: #4a5568;
-  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #1e293b;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.case-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #3b82f6;
 }
 
 .case-card p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #718096;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
 }
 
 @media (max-width: 768px) {
   .kozi-case-cards {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    padding: 16px;
+  }
+  
+  .case-card {
+    padding: 22px;
   }
 }
 </style>
