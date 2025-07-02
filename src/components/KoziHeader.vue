@@ -23,39 +23,65 @@
 
 <style scoped>
 .kozi-header {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .kozi-header h1 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .input-area {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 .task-input {
   flex: 1;
-  padding: 10px;
-  background-color: #3a3a3a;
-  border: 1px solid #4f4f4f;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  border-radius: 4px;
-  margin-right: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+.task-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
 }
 .btn-group {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 .btn {
-  padding: 8px 12px;
-  background-color: #4f4f4f;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
 }
 .send-btn {
-  background-color: #67c23a;
+  background-color: #4caf50;
+  font-weight: 600;
+}
+.send-btn:hover {
+  background-color: #3d8b40;
 }
 </style>
