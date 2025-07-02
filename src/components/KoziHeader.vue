@@ -78,15 +78,16 @@
   gap: 8px;
 }
 .btn {
-  padding: 8px 12px;
+  padding: 8px 16px;
   background-color: #2a2a2a;
   color: #fff;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 13px;
   font-weight: 500;
+  margin: 0 2px;
 }
 .btn:hover {
   background-color: #5a5a5a;
