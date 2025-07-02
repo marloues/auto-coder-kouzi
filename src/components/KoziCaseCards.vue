@@ -31,7 +31,7 @@
 .case-card {
   flex: 1;
   min-height: 200px;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   padding: 28px;
   border-radius: 12px;
   box-shadow: 
