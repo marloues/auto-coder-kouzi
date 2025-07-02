@@ -10,6 +10,7 @@
         :class="{ active: selectedAgent === agent.id }"
         @click="selectAgent(agent.id)"
       >
+        <FontAwesomeIcon :icon="['fas', agent.icon]" class="agent-icon" />
         {{ agent.name }}
       </div>
     </div>
@@ -18,19 +19,32 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { 
+  faPlane, 
+  faChartLine,
+  faNewspaper,
+  faCode,
+  faGavel,
+  faUserGraduate
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faPlane, faChartLine, faNewspaper, faCode, faGavel, faUserGraduate)
 
 interface Agent {
   id: string
   name: string
+  icon: any
 }
 
 const agents: Agent[] = [
-  { id: 'travel', name: 'DeepTrip 旅行专家' },
-  { id: 'stock', name: '华泰A股观察助手' },
-  { id: 'analysis', name: '舆情分析专家' },
-  { id: 'dev', name: '网站开发专家' },
-  { id: 'law', name: '幂律法律助手' },
-  { id: 'research', name: '用户研究专家' }
+  { id: 'travel', name: 'DeepTrip 旅行专家', icon: 'plane' },
+  { id: 'stock', name: '华泰A股观察助手', icon: 'chart-line' },
+  { id: 'analysis', name: '舆情分析专家', icon: 'newspaper' },
+  { id: 'dev', name: '网站开发专家', icon: 'code' },
+  { id: 'law', name: '幂律法律助手', icon: 'gavel' },
+  { id: 'research', name: '用户研究专家', icon: 'user-graduate' }
 ]
 
 const selectedAgent = ref<string | null>(null)
@@ -80,12 +94,18 @@ const selectAgent = (id: string) => {
 
 .agent-items {
   display: flex;
+  
+  .agent-icon {
+    font-size: 1.2rem;
+    color: var(--highlight-color);
+  }
   flex-wrap: wrap;
   gap: 16px;
 }
 
 .agent-item {
-  padding: 12px 20px;
+  padding: 12px 16px;
+  gap: 12px;
   background-color: var(--primary-color);
   border-radius: 8px;
   cursor: pointer;
