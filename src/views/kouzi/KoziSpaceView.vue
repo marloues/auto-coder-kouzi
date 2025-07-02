@@ -22,7 +22,7 @@ import KoziCaseCards from "../../components/KoziCaseCards.vue";
 .kozi-space-page {
   display: flex;
   height: 100vh;
-  background-color: #1e1e1e;
+  background-color: #1e1e2d;
   color: #fff;
 }
 .main-content {
